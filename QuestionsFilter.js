@@ -1,5 +1,5 @@
 function filterQuestions() {
-   $('.level').forEach(function () {
+   $('.level').each(function () {
       alert($(this).id+" is "+$(this).text());
    })
 }
