@@ -23,5 +23,54 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
         integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
         crossorigin="anonymous"></script>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Domain</th>
+        <th>Topic</th>
+        <th>Level</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    <tr>
+        <td>Domain 1</td>
+        <td>Topic 1</td>
+        <td>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Level
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#" onclick="filterQuestion("Topic1", 1)">1</a>
+                    <a class="dropdown-item" href="#" onclick="filterQuestion("Topic1", 2)">2</a>
+                    <a class="dropdown-item" href="#" onclick="filterQuestion("Topic1", 3)">3</a>
+                </div>
+            </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Domain 1</td>
+        <td>Topic 2</td>
+        <td>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Level
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#" onclick="filterQuestion("Topic2", 1)">1</a>
+                    <a class="dropdown-item" href="#" onclick="filterQuestion("Topic2", 2)">2</a>
+                    <a class="dropdown-item" href="#" onclick="filterQuestion("Topic2", 3)">3</a>
+                </div>
+            </div>
+        </td>
+    </tr>
+
+    </tbody>
+</table>
 </body>
 </html>
