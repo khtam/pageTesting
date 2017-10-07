@@ -15,4 +15,12 @@ function filterQuestions() {
 
    //parse
    var questions = JSON.parse(questionString);
+
+   var filteredQuestions = [];
+   //traverse
+   questions.forEach(function (question) {
+      if (programmerProfile[question.topic] == question.level) {
+         filteredQuestions.push(question);
+      }
+   })
 }
