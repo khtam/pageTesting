@@ -24,6 +24,7 @@
         integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
         crossorigin="anonymous"></script>
 
+<script src="QuestionsFilter.js"/>
 <div class="container-fluid">
     <form>
         <table class="table">
@@ -41,7 +42,7 @@
                 <td>Topic 1</td>
                 <td>
                     <div class="form-group">
-                        <select class="form-control" id="topic1">
+                        <select class="form-control level" id="topic1">
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
@@ -57,7 +58,7 @@
                 <td>Topic 2</td>
                 <td>
                     <div class="form-group">
-                        <select class="form-control" id="topic2">
+                        <select class="form-control level" id="topic2">
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
@@ -70,6 +71,7 @@
 
             </tbody>
         </table>
+        <button type="submit" class="btn btn-primary" onclick="filterQuestions()">Submit</button>
     </form>
 </div>
 </body>
